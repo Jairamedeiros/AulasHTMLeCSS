@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="UTF-8">
+       
+    </head>
+    <body>
+        <form name="form1" method="get" action="arquivo.jsp"> <!-- método get mostra tudo da página na url, post confidencial (usado em compras, pagamentos etc)(https)-->
+            Nome: <input type="text" name="nome"/><br/>
+            Nascimento: <input type="date" name="niver"/><br/>
+            Filhos: <input type="number" min="0" max="5" name="filhos"/><br/>
+            Satisfação: <input type="range" min="0" max="5" name="nivel"/><br/>
+            Preferenciais: <br/>
+            <input type="checkbox" name="futebol" checked/>Futebol<br/>
+            <input type="checkbox" name="cinema" checked/>Cinema<br/>
+            <input type="checkbox" name="praia" checked/>Praia<br/>
+            Sexo:<br/>
+            <input type="radio" name="sexo" checked/>Masculino<br/>
+            <input type="radio" name="sexo"/>Feminino<br/>
+            Cidade:
+            <select name="cidade">
+                <option value="nat" >Natal</option>
+                <option value="jpa">João Pessoa</option>
+                <option value="rec">Recife</option>
+                <option value="for">Fortaleza</option>
+            </select><br/>
+            Observações: <br/>
+            <textarea name="obs">Seu texto aqui</textarea><br/>
+            <input type="button" value="Botão"/>
+            <input type="reset" value="Limpar"/>
+            <input type ="submit" value="Enviar"/>
+            
+            
+        </form>
+    </body>
+</html>
