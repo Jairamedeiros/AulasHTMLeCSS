@@ -6,35 +6,110 @@
     <head>
         <title>Formulário</title>
         <meta charset="UTF-8">
+        <style>
+            body{
+                background-color: pink; 
+            }
+            
+            table{
+                background-color: lightgrey;  
+            }
+            
+            tr,td{
+                text-align: left;
+            }
+            
+        </style>
        
     </head>
     <body>
         <form name="form1" method="get" action="arquivo.jsp"> <!-- método get mostra tudo da página na url, post confidencial (usado em compras, pagamentos etc)(https)-->
-            Nome: <input type="text" name="nome"/><br/>
-            Nascimento: <input type="date" name="niver"/><br/>
-            Filhos: <input type="number" min="0" max="5" name="filhos"/><br/>
-            Satisfação: <input type="range" min="0" max="5" name="nivel"/><br/>
-            Preferenciais: <br/>
-            <input type="checkbox" name="futebol" checked/>Futebol<br/>
-            <input type="checkbox" name="cinema" checked/>Cinema<br/>
-            <input type="checkbox" name="praia" checked/>Praia<br/>
-            Sexo:<br/>
-            <input type="radio" name="sexo" checked/>Masculino<br/>
-            <input type="radio" name="sexo"/>Feminino<br/>
-            Cidade:
-            <select name="cidade">
-                <option value="nat" >Natal</option>
-                <option value="jpa">João Pessoa</option>
-                <option value="rec">Recife</option>
-                <option value="for">Fortaleza</option>
-            </select><br/>
-            Observações: <br/>
-            <textarea name="obs">Seu texto aqui</textarea><br/>
-            <input type="button" value="Botão"/>
-            <input type="reset" value="Limpar"/>
-            <input type ="submit" value="Enviar"/>
             
-            
+            <table border="1" align="center" width="30%">
+                <tr>
+                    <td> Nome:</td>
+                    <td colspan="2"> <input type="text" name="nome"/></td>    
+                </tr>
+                
+                
+                <tr>
+                    <td>Nascimento:</td>
+                    <td colspan="2"><input type="date" name="niver"/></td>
+                </tr>
+                
+                
+                <tr>
+                    <td>Filhos: </td>
+                    <td colspan="2"><input type="number" value="0" min="0" max="5" name="filhos"/></td>                    
+                </tr>
+                
+                
+                <tr>
+                    <td>Satisfação: </td>
+                    <td colspan="2"><input type="range" value="0" min="0" max="5" name="nivel"/> </td> 
+                </tr>
+                
+                
+                <tr>
+                    <td>Preferencias:</td>
+                </tr>   
+                    
+                <tr>
+                    <td><input type="checkbox" name="futebol" checked/>Futebol</td>
+                </tr>    
+                    
+                <tr>
+                    <td><input type="checkbox" name="cinema" checked/>Cinema</td>
+                </tr>    
+                    
+                <tr>    
+                    <td><input type="checkbox" name="praia" checked/>Praia</td>                  
+                </tr>
+                
+                
+                <tr>
+                    <td>Sexo:</td>
+                </tr>    
+                    
+                <tr>
+                    <td><input type="radio" name="sexo" checked/>Masculino</td>
+                </tr>    
+                
+                
+                <tr>    
+                    <td><input type="radio" name="sexo"/>Feminino </td>                  
+                </tr>
+                
+                
+                <tr>
+                    <td> Cidade: </td>
+                    <td colspan="2"> 
+                        <select name="cidade">
+                            <option value="nat" >Natal</option>
+                            <option value="jpa">João Pessoa</option>
+                            <option value="rec">Recife</option>
+                            <option value="for">Fortaleza</option>
+                        </select>  
+                    </td> 
+                </tr>
+                
+                <tr>
+                    <td>Observações:</td>
+                </tr>
+                
+                <tr>
+                    <td colspan="3"><textarea name="obs">Seu texto aqui</textarea></td>
+                </tr>
+                                                
+                <tr>
+                    <td><input type="button" value="Botão"/></td>
+                    <td><input type="reset" value="Limpar"/></td>
+                    <td><input type ="submit" value="Enviar"/></td>  
+                </tr>
+                
+                      
+            </table>
+                        
         </form>
     </body>
 </html>
