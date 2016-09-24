@@ -14,17 +14,48 @@
                 <div class="row">
                     <div class="col-md-6">
                         <fieldset>
-                            <legend>Nome</legend>
-                            <input type="text" class="form-control" placeholder="Nome"/>
+                            <legend>Dados Pessoais</legend>
+                            <input type="text" class="form-control" placeholder="Nome"/><br/>
+                            <input type="text" class="form-control" placeholder="Sobrenome"/><br/>
+                            <input type="text" class="form-control" placeholder="Endereço"/><br/>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <legend>Sexo</legend>
+                                     <div class="col-md-6">
+                                        <input type="radio" name="sexo" class="form-group"/>Masculino
+                                     </div>
+                                    <div class="col-md-6">
+                                        <input type="radio" name="sexo" class="form-group"/>Feminino
+                                    </div>
+                                </fieldset>
+                            </div>
                         </fieldset>
                     </div>
-                        <div class="col-md-4">
-                        <fieldset>
-                            <legend>Endereço</legend>
-                            <input type="text" class="form-control" placeholder="Endereço"/>
-                        </fieldset>
-                    </div>
+                        
                 </div>
+                <div>
+                     <div class="row">
+                         <div class="col-md-6">
+                             <fieldset>
+                                 <legend>Dados Financeiros</legend>
+                                 <select class="form-control">
+                                     <option>Visa</option>
+                                     <option>Master</option>
+                                     <option>Elo</option>
+                                 </select>
+                             </fieldset>
+                         </div>  
+                     </div>  
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button class="btn btn-danger">Danger</button>
+                            <button class="btn btn-warning">Atenção</button>
+                            
+                            <button class="btn btn-success">
+                                <span class="glyphicon glyphicon-ok">ok</span>
+                            </button>
+                        </div>
+                    </div>    
             </form>
         </div>
     </body>
